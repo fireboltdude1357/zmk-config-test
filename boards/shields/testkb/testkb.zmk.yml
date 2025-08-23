@@ -1,0 +1,10 @@
+file_format: "1"
+id: testkb
+name: TestKB
+type: shield
+url: https://github.com/yourusername/testkb   # (optional, link to your repo/project)
+requires: [nice_nano_v2]
+exposes: []
+features:
+  - keys
+siblings: []
