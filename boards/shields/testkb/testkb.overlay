@@ -7,10 +7,10 @@
         wakeup-source;
 
         col-gpios
-            = <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+            = <&pro_micro 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
 
         row-gpios
-            = <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+            = <&pro_micro 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
     };
 
     default_transform: keymap_transform0 {
