@@ -24,5 +24,16 @@
                 &kp ESC   &kp ENTER  &kp DEL    &kp PLUS    &none      &none
             >;
         };
+        num_layer {
+            bindings = <
+                &kp R  &kp R  &kp R  &kp R  &kp R  &kp R
+                &kp R  &kp R  &kp N6  &kp R  &kp R  &kp R
+                &kp R  &kp R  &kp N7  &kp R  &kp R  &kp R
+                &kp R  &kp R  &kp N8  &kp R  &kp R  &kp R
+                &kp R  &kp R  &kp N9  &kp R  &kp R  &kp R
+                &kp R  &kp R  &kp N0  &kp R  &kp R  &kp R
+                &kp R  &kp R  &kp R  &kp R  &kp R  &kp R
+            >; 
+        }
     };
 };
