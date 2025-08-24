@@ -3,14 +3,14 @@
 / {
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
-        diode-direction = "col2row";
+        diode-direction = "row2col";
         wakeup-source;
 
-        // Column pin: P0.17
-        col-gpios = <&gpio0 31 GPIO_ACTIVE_HIGH>;
+        // Column pin: P0.31 (input)
+        col-gpios = <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
 
-        // Row pin: P0.31
-        row-gpios = <&gpio0 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+        // Row pin: P0.17 (output)
+        row-gpios = <&gpio0 17 GPIO_ACTIVE_HIGH>;
     };
 
     default_transform: keymap_transform0 {
