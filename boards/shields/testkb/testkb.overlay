@@ -6,8 +6,11 @@
         diode-direction = "col2row";
         wakeup-source;
 
+        // Column pin: P0.17
         col-gpios = <&gpio0 17 GPIO_ACTIVE_HIGH>;
-		row-gpios = <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+
+        // Row pin: P0.31
+        row-gpios = <&gpio0 31 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
     };
 
     default_transform: keymap_transform0 {
@@ -18,16 +21,14 @@
             RC(0,0)   // Only one key: row 0, col 0
         >;
     };
-};
-/ {
+
     physical_layout0: physical_layout_0 {
         compatible = "zmk,physical-layout";
         display-name = "Default Layout";
         kscan = <&kscan0>;                // reference to your kscan
         transform = <&default_transform>; // reference to your matrix transform
     };
-};
-/ {
+
     chosen {
         zmk,physical-layout = &physical_layout0;
     };
