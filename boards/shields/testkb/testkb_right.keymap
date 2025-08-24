@@ -16,11 +16,11 @@
             // |  ESC |  ENT  |  DEL  |   +   | empty | empty  |
             bindings = <
                 &kp BSPC  &kp TAB    &kp BSLH   &kp RSHIFT  &kp PLUS   &kp RGUI
-                &kp 6     &kp Y      &kp H      &kp N       &kp EQUAL  &kp RCTRL
-                &kp 7     &kp U      &kp J      &kp M       &kp SPACE  &kp RALT
-                &kp 8     &kp I      &kp K      &kp COMMA   &kp ENTER  &kp K_MUTE
-                &kp 9     &kp O      &kp L      &kp DOT     &none      &none
-                &kp 0     &kp P      &kp SEMI   &kp SLASH   &none      &none
+                &kp N6     &kp Y      &kp H      &kp N       &kp EQUAL  &kp RCTRL
+                &kp N7     &kp U      &kp J      &kp M       &kp SPACE  &kp RALT
+                &kp N8     &kp I      &kp K      &kp COMMA   &kp ENTER  &kp K_MUTE
+                &kp N9     &kp O      &kp L      &kp DOT     &none      &none
+                &kp N0     &kp P      &kp SEMI   &kp SLASH   &none      &none
                 &kp ESC   &kp ENTER  &kp DEL    &kp PLUS    &none      &none
             >;
         };
