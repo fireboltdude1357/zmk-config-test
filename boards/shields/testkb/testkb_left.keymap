@@ -6,14 +6,22 @@
         compatible = "zmk,keymap";
 
         default_layer {
+            // Layout preview (left half)
+            // |  `   |  TAB  |   \\   |  SHIFT |   +   |  LGUI  |
+            // |  1   |   Q   |   A   |   Z    |   -   |  LCTRL |
+            // |  2   |   W   |   S   |   X    |  SPC  |  LALT  |
+            // |  3   |   E   |   D   |   C    |  ENT  | K_MUTE |
+            // |  4   |   R   |   F   |   V    | empty | empty  |
+            // |  5   |   T   |   G   |   B    | empty | empty  |
+            // |  ESC |  ENT  |  DEL  |   +    | empty | empty  |
             bindings = <
-                &kp `  &kp TAB  &kp \  &kp SHIFT  &kp +  &kp LGUI
-                &kp 1  &kp Q  &kp A  &kp Z  &kp -  &kp LCTRL
-                &kp 2  &kp W  &kp S  &kp X  &kp SPACE  &kp LALT
-                &kp 3  &kp E  &kp D  &kp C  &kp ENTER  &kp K_MUTE
-                &kp 4  &kp R  &kp F  &kp V  &kp L  &kp L
-                &kp 5  &kp T  &kp G  &kp B  &kp L  &kp L
-                &kp ESC  &kp ENTER  &kp DEL  &kp +  &kp L  &kp L
+                &kp GRAVE  &kp TAB    &kp BSLH   &kp SHIFT  &kp PLUS   &kp LGUI
+                &kp 1      &kp Q      &kp A      &kp Z      &kp MINUS  &kp LCTRL
+                &kp 2      &kp W      &kp S      &kp X      &kp SPACE  &kp LALT
+                &kp 3      &kp E      &kp D      &kp C      &kp ENTER  &kp K_MUTE
+                &kp 4      &kp R      &kp F      &kp V      &kp L      &kp L
+                &kp 5      &kp T      &kp G      &kp B      &kp L      &kp L
+                &kp ESC    &kp ENTER  &kp DEL    &kp +      &kp L      &kp L
             >;
         };
     };
