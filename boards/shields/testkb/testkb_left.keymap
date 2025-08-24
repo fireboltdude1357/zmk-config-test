@@ -15,14 +15,15 @@
             // |  5   |   T   |   G   |   B    | empty | empty  |
             // |  ESC |  ENT  |  DEL  |   +    | empty | empty  |
             bindings = <
-                &kp GRAVE  &kp TAB    &kp BSLH   &kp LSHIFT &kp L   &kp LGUI
-                &kp N1      &kp Q      &kp A      &kp Z      &kp O  &kp LCTRL
-                &kp N2      &kp W      &kp S      &kp X      &kp SPACE  &kp LALT
-                &kp N3      &kp E      &kp D      &kp C      &kp ENTER  &kp K_MUTE
-                &kp N4      &kp R      &kp F      &kp V      &kp R      &none
-                &kp N5      &kp T      &kp G      &kp B      &kp Y      &none
-                &kp ESC    &kp ENTER  &kp DEL    &kp PLUS   &kp J &none
+                &kp GRAVE  &kp TAB    &kp BSLH   &kp LSHIFT &none   &kp LGUI
+                &kp N1      &kp Q      &kp A      &kp Z      &none  &kp LCTRL
+                &kp N2      &kp W      &kp S      &kp X      &kp L  &kp LALT
+                &kp N3      &kp E      &kp D      &kp C      &kp L  &kp K_MUTE
+                &kp N4      &kp R      &kp F      &kp V      &kp SPACE      &none
+                &kp N5      &kp T      &kp G      &kp B      &kp ENTER      &none
+                &kp ESC    &kp ENTER  &kp DEL    &kp PLUS   &none &none
             >;
         };
     };
 };
+yrrrrrrrrrrrrrrrr
