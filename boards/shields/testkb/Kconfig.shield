@@ -1,3 +1,7 @@
 # No whitespace after the comma or in your keyboard name!
-config SHIELD_TESTKB
-	def_bool $(shields_list_contains,testkb)
+config SHIELD_TESTKB_LEFT
+	def_bool $(shields_list_contains,testkb_left)
+	
+	
+config SHIELD_TESTKB_RIGHT
+	def_bool $(shields_list_contains,testkb_right)

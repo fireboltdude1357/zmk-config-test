@@ -1,7 +1,17 @@
-if SHIELD_TESTKB
+if SHIELD_TESTKB_LEFT
 
 # Name must be less than 16 characters long!
 config ZMK_KEYBOARD_NAME
-	default "testkb"
+    default "Test Keyboard"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_TESTKB_LEFT || SHIELD_TESTKB_RIGHT
+
+config ZMK_SPLIT
+    default y
 
 endif
