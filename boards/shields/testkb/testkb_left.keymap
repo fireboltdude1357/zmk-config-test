@@ -21,7 +21,7 @@
                 &kp 3      &kp E      &kp D      &kp C      &kp ENTER  &kp K_MUTE
                 &kp 4      &kp R      &kp F      &kp V      &kp L      &kp L
                 &kp 5      &kp T      &kp G      &kp B      &kp L      &kp L
-                &kp ESC    &kp ENTER  &kp DEL    &kp +      &kp L      &kp L
+                &kp ESC    &kp ENTER  &kp DEL    &kp PLUS   &kp L      &kp L
             >;
         };
     };
