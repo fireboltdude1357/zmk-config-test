@@ -24,7 +24,6 @@
                 &kp ESC    &kp ENTER  &kp DEL    &kp PLUS   &none &none
             >;
         };
-       6354 
         num_layer {
             bindings = <
                 &kp R  &kp R  &kp R  &kp R  &kp R  &kp R
