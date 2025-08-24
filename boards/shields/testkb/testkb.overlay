@@ -7,10 +7,10 @@
         wakeup-source;
 
         // Column pin: P0.17
-        col-gpios = <&gpio0 17 GPIO_ACTIVE_LOW>;
+        col-gpios = <&gpio0 31 GPIO_ACTIVE_HIGH>;
 
         // Row pin: P0.31
-        row-gpios = <&gpio0 31 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        row-gpios = <&gpio0 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
     };
 
     default_transform: keymap_transform0 {
