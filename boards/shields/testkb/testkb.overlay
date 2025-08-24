@@ -7,7 +7,7 @@
         wakeup-source;
 
         // Column pin: P0.17
-        col-gpios = <&gpio0 17 GPIO_ACTIVE_HIGH>;
+        col-gpios = <&gpio0 17 GPIO_ACTIVE_LOW>;
 
         // Row pin: P0.31
         row-gpios = <&gpio0 31 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
