@@ -86,7 +86,7 @@
                         bindings = <
    &none  &none    &none             &none            &none              &none    &none                      &none     &none  &none    &none    &none    &none &none
    &none  &none    &none             &mmv MOVE_UP     &kp LSHFT          &none    &none                      &none     &none  &none    &none    &none    &none &none
-   &none  &none    &mmv MOVE_LEFT    &mmv MOVE_DOWN   &mmv MOVE_RIGHT    &kp LGUI &none                      &none     &none  &mkb MB4 &mkb MB5 &none    &none &none
+   &none  &none    &mmv MOVE_LEFT    &mmv MOVE_DOWN   &mmv MOVE_RIGHT    &kp LGUI &none                      &none     &none  &mkp MB4 &mkp MB5 &none    &none &none
    &none  &none    &none             &none            &none              &none    &none                      &none     &none  &none    &none    &none    &none &none
    &none  &none    &none             &none            &mkp MB1           &mkp MB2 &none                      &none     &none  &none    &none    &none    &none &none
    &none  &none    &none             &none            &none              &none    &none                      &none     &none  &none    &none    &none    &none &none
