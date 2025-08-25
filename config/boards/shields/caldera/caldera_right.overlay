@@ -3,7 +3,6 @@
 &default_transform { 
     col-offset = <7>;
 };
-yyyyyuuuuuiiipp\\\6666667779988jlkjk
 &kscan0 {
     col-gpios
         = <&gpio1 6 GPIO_ACTIVE_HIGH>
