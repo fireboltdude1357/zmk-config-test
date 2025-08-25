@@ -28,7 +28,9 @@
     };
 
     // shared matrix transform provided by testkb_shared.dtsi
-
+    default_transform0: default_transform {
+        row-offset = <7>;
+    }
     physical_layout0: physical_layout_0 {
         compatible = "zmk,physical-layout";
         display-name = "Default Layout";
