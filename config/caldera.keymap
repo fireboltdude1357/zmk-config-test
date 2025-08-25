@@ -100,7 +100,7 @@
    &kp CAPS   &kp A     &kp S     &kp D      &kp F      &kp G     &kp BSPC           &kp CAPS &kp H      &kp J      &kp K     &kp L     &kp SEMI &kp RET  
    &kp LSHFT  &kp Z     &kp X     &kp C      &kp V      &kp B     &none              &none    &kp N      &kp M      &kp COMMA &kp DOT   &kp APOS &kp RSHFT
    &kp N1     &kp N2    &mo 2     &mo 3      &kp ENTER  &kp SPACE &kp N7             &none    &kp SPACE  &kp ENTER  &mo 4     &mo 3     &none    &none 
-   &kp N1     &kp LCTRL &kp CAPS  &kp LALT   &mo 4  &kp N6    &kp N7             &kp N1   &kp N2     &mo 3     &kp N4     &kp N5    &kp N6   &kp N7 
+   &kp N1     &kp LCTRL &kp CAPS  &kp LALT   &mo 4  &kp ESC    &kp N7             &kp N1   &kp N2     &mo 3     &kp N4     &kp N5    &kp N6   &kp N7 
                         >;
                 };
                 num_layer {
@@ -138,7 +138,7 @@
    &none  &none        &none             &none            &none            &none             &none                     &none     &none  &none       &none     &none        &none  &none   
    &none  &none        &none             &none            &msc SCRL_UP     &none             &none                     &none     &none  &kp X       &kp UP    &none        &none  &none 
    &none  &kp LCTRL    &kp LALT          &kp LSHIFT       &kp LGUI         &msc SCRL_DOWN    &none                     &none     &kp Z  &kp LEFT    &kp DOWN  &kp RIGHT    &kp N4 &kp BSPC 
-   &none  &none        &msc SCRL_LEFT    &msc SCRL_RIGHT  &zed_em_kay      &none             &none                     &none     &kp H  &kp V       &kp S     &none        &none  &none 
+   &kp LSHIFT  &none        &msc SCRL_LEFT    &msc SCRL_RIGHT  &zed_em_kay      &none             &none                     &none     &kp H  &kp V       &kp S     &none        &none  &none 
    &none  &none        &none             &none            &none            &none             &none                     &none     &none  &none       &none     &none        &none  &none
    &none  &none        &none             &none            &none            &none             &none                     &none     &none  &none       &none     &none        &none  &none               
                         >;
