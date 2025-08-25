@@ -6,14 +6,44 @@
         compatible = "zmk,keymap";
 
         default_layer {
+            // Combined 14x6 grid (rows 0-6 left, 7-13 right)
             bindings = <
-                &kp A  &kp B  &kp C  &kp D  &kp E  &kp F
-                &kp G  &kp H  &kp I  &kp J  &kp K  &kp L
-                &kp M  &kp N  &kp O  &kp P  &kp Q  &kp R
-                &kp S  &kp T  &kp U  &kp V  &kp W  &kp X
-                &kp Y  &kp Z  &kp N1 &kp N2 &kp N3 &kp N4
-                &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
-                &kp TAB &kp ESC &kp SPACE &kp ENTER &kp BSPC &kp DEL
+                &kp GRAVE   &kp TAB     &kp BSLH    &kp LSHIFT  &none        &kp N1
+                &kp N1      &kp Q       &kp A       &kp Z       &none        &kp N2
+                &kp N2      &kp W       &kp S       &kp X       &mo 1        &kp CAPSLOCK
+                &kp N3      &kp E       &kp D       &kp C       &kp L        &kp LALT
+                &kp N4      &kp R       &kp F       &kp V       &kp SPACE    &kp LCTRL
+                &kp N5      &kp T       &kp G       &kp B       &kp ENTER    &kp LGUI
+                &kp ESC     &kp ENTER   &kp DEL     &kp PLUS    &none        &none
+
+                &kp BSPC    &kp TAB     &kp BSLH    &kp RSHIFT  &kp PLUS     &kp RGUI
+                &kp N6      &kp Y       &kp H       &kp N       &kp EQUAL    &kp RCTRL
+                &kp N7      &kp U       &kp J       &kp M       &kp SPACE    &kp RALT
+                &kp N8      &kp I       &kp K       &kp COMMA   &kp ENTER    &kp K_MUTE
+                &kp N9      &kp O       &kp L       &kp DOT     &none        &none
+                &kp N0      &kp P       &kp SEMI    &kp SLASH   &none        &none
+                &kp ESC     &kp ENTER   &kp DEL     &kp PLUS    &none        &none
+            >;
+        };
+
+        num_layer {
+            // 14x6 numeric layer consolidated
+            bindings = <
+                &kp R  &kp R  &kp R  &kp R  &kp R  &kp R
+                &kp R  &kp R  &kp N1 &kp R  &kp R  &kp R
+                &kp R  &kp R  &kp N2 &kp R  &kp R  &kp R
+                &kp R  &kp R  &kp N3 &kp R  &kp R  &kp R
+                &kp R  &kp R  &kp N4 &kp R  &kp R  &kp R
+                &kp R  &kp R  &kp N5 &kp R  &kp R  &kp R
+                &kp R  &kp R  &kp R  &kp R  &kp R  &kp R
+
+                &kp R  &kp R  &kp R  &kp R  &kp R  &kp R
+                &kp R  &kp R  &kp N6 &kp R  &kp R  &kp R
+                &kp R  &kp R  &kp N7 &kp R  &kp R  &kp R
+                &kp R  &kp R  &kp N8 &kp R  &kp R  &kp R
+                &kp R  &kp R  &kp N9 &kp R  &kp R  &kp R
+                &kp R  &kp R  &kp N0 &kp R  &kp R  &kp R
+                &kp R  &kp R  &kp R  &kp R  &kp R  &kp R
             >;
         };
     };
