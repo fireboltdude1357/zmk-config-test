@@ -31,14 +31,19 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp LGUI &kp F2>
+                = <&macro_press &kp LGUI> 
+                , <&macro_tap &kp F2>
+                , <&macro_release &kp LGUI>
                 ;
+                
         };
         screen_1_down: screen_1_down {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp LGUI &kp F3>
+                = <&macro_press &kp LGUI> 
+                , <&macro_tap &kp F3>
+                , <&macro_release &kp LGUI>
                 ;
         };
 
@@ -46,7 +51,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp LGUI &kp F4>
+                = <&macro_press &kp LGUI> 
+                , <&macro_tap &kp F4>
+                , <&macro_release &kp LGUI>
                 ;
         };
 
@@ -54,7 +61,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp LGUI &kp F5>
+                = <&macro_press &kp LGUI> 
+                , <&macro_tap &kp F5>
+                , <&macro_release &kp LGUI>
                 ;
         };
 
@@ -62,7 +71,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp LGUI &kp F6>
+                = <&macro_press &kp LGUI> 
+                , <&macro_tap &kp F6>
+                , <&macro_release &kp LGUI>
                 ;
         };
 
@@ -70,7 +81,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp LGUI &kp F7>
+                = <&macro_press &kp LGUI> 
+                , <&macro_tap &kp F7>
+                , <&macro_release &kp LGUI>
                 ;
         };
 
@@ -78,7 +91,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp LGUI &kp F8>
+                = <&macro_press &kp LGUI> 
+                , <&macro_tap &kp F8>
+                , <&macro_release &kp LGUI>
                 ;
         };
 
@@ -86,7 +101,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp LGUI &kp F9>
+                = <&macro_press &kp LGUI> 
+                , <&macro_tap &kp F9>
+                , <&macro_release &kp LGUI>
                 ;
         };
     };
