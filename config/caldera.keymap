@@ -136,12 +136,12 @@
                 };
                 teleport_layer {
                         bindings = <
-   &none  &none        &none             &none            &none            &none             &none                      &none     &none  &none       &none     &none        &none  &none
-   &none  &none        &screen_1_top_left             &screen_1_up     &screen_1_top_right            &none             &none                      &none     &none  &none       &none     &none        &none  &none
-   &none  &none        &screen_1_left             &screen_1_center &screen_1_right            &none             &none                      &none     &none  &none       &none     &none        &none  &none
-   &none  &none        &screen_1_bottom_left             &screen_1_down   &screen_1_bottom_right            &none             &none                      &none     &none  &none       &none     &none        &none  &none
-   &none  &none        &none             &none            &none            &none             &none                      &none     &none  &none       &none     &none        &none  &none
-   &none  &none        &none             &none            &none            &none             &none                      &none     &none  &none       &none     &none        &none  &none
+   &none             &none            &none            &none             &none     &none   &none                 &none     &none  &none       &none     &none        &none  &none
+   &kp LG(F6)        &kp LG(F2)       &kp LG(F7)       &LA(F3)           &LG(F11)  &LA(F4) &none                 &none     &LA(F12)  &LA(F8)       &LC(F1)     &none        &none  &none
+   &kp LG(F4)        &kp LG(F1)       &kp LG(F5)       &LA(F1)           &LG(F10)  &LA(F2) &none                 &none     &LA(F10)  &LA(F7)       &LA(F11)     &none        &none  &none
+   &kp LG(F8)        &kp LG(F3)       &kp LG(F9)       &LA(F5)           &LG(F12)  &LA(F6) &none                 &none     &LC(F2)  &LA(F9)       &LC(F3)     &LC(F4)        &none  &none
+   &none             &none            &none            &none             &none     &none   &none                 &none     &none  &none       &none     &none        &none  &none
+   &none             &none            &none            &none             &none     &none   &none                 &none     &none  &none       &none     &none        &none  &none
 
                         >;
                 };
