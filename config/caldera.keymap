@@ -9,7 +9,7 @@
     combos {
         compatible = "zmk,combos";
         combo_esc {
-            timeout-ms = <10>;
+            timeout-ms = <50>;
             key-positions = <61 64>;
             bindings = <&mo 5>;
         };
@@ -157,4 +157,4 @@
 };
 
 
-
+ 
