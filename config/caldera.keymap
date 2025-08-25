@@ -80,7 +80,7 @@
                 ;
         };
 
-        screen_1_bottomg_right: screen_1_bottom_right {
+        screen_1_bottom_right: screen_1_bottom_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
