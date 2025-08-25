@@ -16,6 +16,29 @@
                 , <&macro_release &kp LSHFT>
                 ;
         };
+
+        screen_1_center: screen_1_center {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LGUI &kp F1>
+                ;
+        };
+
+        screen_1_up: screen_1_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LGUI &kp F2>
+                ;
+        };
+        screen_1_down: screen_1_down {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp LGUI &kp F3>
+                ;
+        };
     };
 };
 
@@ -51,19 +74,19 @@
                 };
                 special_chars {
                         bindings = <
-   &none  &none    &none    &none     &none     &none    &none            &none     &none  &none    &none    &none    &none &none
-   &none  &none    &none    &none     &none     &none    &none            &none     &none  &none    &none    &none    &none &none
-   &none  &kp EXCL   &kp AT   &kp POUND    &kp DOLLAR    &kp PERCENT   &none            &none     &kp CARET &kp AMPS   &kp STAR   &kp LPAR   &kp RPAR &none
-   &none  &none    &none    &none     &none     &none    &none            &none     &none  &none    &none    &none    &none &none
-   &none  &none    &none    &none     &none     &none    &none            &none     &none  &none    &none    &none    &none &none
-   &none  &none    &none    &none     &none     &none    &none            &none     &none  &none    &none    &none    &none &none
+   &none  &none    &none    &none     &none         &none         &none            &none     &none     &none    &none    &none    &none &none
+   &none  &none    &none    &none     &none         &none         &none            &none     &none     &none    &none    &none    &none &none
+   &none  &kp EXCL &kp AT   &kp POUND &kp DOLLAR    &kp PERCENT   &none            &none     &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR &none
+   &none  &none    &none    &none     &none         &none         &none            &none     &none     &none    &none    &none    &none &none
+   &none  &none    &none    &none     &none         &none         &none            &none     &none     &none    &none    &none    &none &none
+   &none  &none    &none    &none     &none         &none         &none            &none     &none     &none    &none    &none    &none &none
                         >;
                 };
                 mouse_layer {
                         bindings = <
    &none  &none    &none             &none            &none              &none    &none                      &none     &none  &none    &none    &none    &none &none
-   &none  &none    &none             &mmv MOVE_UP     &none              &none    &none                      &none     &none  &none    &none    &none    &none &none
-   &none  &none    &mmv MOVE_LEFT    &mmv MOVE_DOWN   &mmv MOVE_RIGHT    &none    &none                      &none     &none  &none    &none    &none    &none &none
+   &none  &none    &none             &mmv MOVE_UP     &kp LSHFT          &none    &none                      &none     &none  &none    &none    &none    &none &none
+   &none  &none    &mmv MOVE_LEFT    &mmv MOVE_DOWN   &mmv MOVE_RIGHT    &kp LGUI &none                      &none     &none  &mkb MB4 &mkb MB5 &none    &none &none
    &none  &none    &none             &none            &none              &none    &none                      &none     &none  &none    &none    &none    &none &none
    &none  &none    &none             &none            &mkp MB1           &mkp MB2 &none                      &none     &none  &none    &none    &none    &none &none
    &none  &none    &none             &none            &none              &none    &none                      &none     &none  &none    &none    &none    &none &none
@@ -75,7 +98,7 @@
    &none  &none        &none             &none            &none            &none             &none                      &none     &none  &kp X       &kp UP    &none        &none  &none
    &none  &none        &none             &none            &msc SCRL_UP     &none             &none                      &none     &kp Z  &kp LEFT    &kp DOWN  &kp RIGHT    &kp N4 &kp BSPC
    &none  &kp LCTRL    &kp LALT          &kp LSHIFT       &kp LGUI         &msc SCRL_DOWN    &none                      &none     &kp H  &kp V       &kp S     &none        &none  &none
-   &none  &none        &msc SCRL_LEFT    &msc SCRL_RIGHT  &zed_em_kay            &none             &none                      &none     &none  &none       &none     &none        &none  &none
+   &none  &none        &msc SCRL_LEFT    &msc SCRL_RIGHT  &zed_em_kay       &none            &none                      &none     &none  &none       &none     &none        &none  &none
    &none  &none        &none             &none            &none            &none             &none                      &none     &none  &none       &none     &none        &none  &none
                         >;
                 };
