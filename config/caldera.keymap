@@ -20,91 +20,55 @@
         screen_1_center: screen_1_center {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI> 
-                , <&macro_tap &kp F1>
-                , <&macro_release &kp LGUI>
-                ;
+            bindings = <&kp LG(F1)>;
         };
 
         screen_1_up: screen_1_up {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI> 
-                , <&macro_tap &kp F2>
-                , <&macro_release &kp LGUI>
-                ;
+            bindings = <&kp LG(F2)>;
                 
         };
         screen_1_down: screen_1_down {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI> 
-                , <&macro_tap &kp F3>
-                , <&macro_release &kp LGUI>
-                ;
+            bindings = <&kp LG(F3)>;
         };
 
         screen_1_left: screen_1_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI> 
-                , <&macro_tap &kp F4>
-                , <&macro_release &kp LGUI>
-                ;
+            bindings = <&kp LG(F4)>;
         };
 
         screen_1_right: screen_1_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI> 
-                , <&macro_tap &kp F5>
-                , <&macro_release &kp LGUI>
-                ;
+            bindings = <&kp LG(F5)>;
         };
 
         screen_1_top_left: screen_1_top_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI> 
-                , <&macro_tap &kp F6>
-                , <&macro_release &kp LGUI>
-                ;
+            bindings = <&kp LG(F6)>;
         };
 
         screen_1_top_right: screen_1_top_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI> 
-                , <&macro_tap &kp F7>
-                , <&macro_release &kp LGUI>
-                ;
+            bindings = <&kp LG(F7)>;
         };
 
         screen_1_bottom_left: screen_1_bottom_left {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI> 
-                , <&macro_tap &kp F8>
-                , <&macro_release &kp LGUI>
-                ;
+            bindings = <&kp LG(F8)>;
         };
 
         screen_1_bottom_right: screen_1_bottom_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LGUI> 
-                , <&macro_tap &kp F9>
-                , <&macro_release &kp LGUI>
-                ;
+            bindings = <&kp LG(F9)>;
         };
     };
 };
