@@ -102,6 +102,17 @@
    &none  &none        &none             &none            &none            &none             &none                      &none     &none  &none       &none     &none        &none  &none
                         >;
                 };
+                teleport_layer {
+                        bindings = <
+   &none  &none        &none             &none            &none            &none             &none                      &none     &none  &none       &none     &none        &none  &none
+   &none  &none        &none             &screen_1_up            &none            &none             &none                      &none     &none  &none       &none     &none        &none  &none
+   &none  &none        &none             &screen_1_center            &none            &none             &none                      &none     &none  &none       &none     &none        &none  &none
+   &none  &none        &none             &screen_1_down            &none            &none             &none                      &none     &none  &none       &none     &none        &none  &none
+   &none  &none        &none             &none            &none            &none             &none                      &none     &none  &none       &none     &none        &none  &none
+   &none  &none        &none             &none            &none            &none             &none                      &none     &none  &none       &none     &none        &none  &none
+
+                        >;
+                }
         };
 };
 
