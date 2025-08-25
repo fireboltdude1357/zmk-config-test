@@ -136,13 +136,13 @@
                 };
                 teleport_layer {
                         bindings = <
-   &none             &none            &none            &none             &none     &none   &none                 &none     &none  &none       &none     &none        &none  &none
-   &kp LG(F6)        &kp LG(F2)       &kp LG(F7)       &LA(F3)           &LG(F11)  &kp LA(F4) &none                 &none     &kp LA(F12)  &kp LA(F8)       &kp LC(F1)     &none        &none  &none
-   &kp LG(F4)        &kp LG(F1)       &kp LG(F5)       &LA(F1)           &LG(F10)  &kp LA(F2) &none                 &none     &kp LA(F10)  &kp LA(F7)       &kp LA(F11)     &none        &none  &none
-   &kp LG(F8)        &kp LG(F3)       &kp LG(F9)       &LA(F5)           &LG(F12)  &kp LA(F6) &none                 &none     &kp LC(F2)  &kp LA(F9)       &kp LC(F3)     &kp LC(F4)        &none  &none
-   &none             &none            &none            &none             &none     &none   &none                 &none     &none  &none       &none     &none        &none  &none
-   &none             &none            &none            &none             &none     &none   &none                 &none     &none  &none       &none     &none        &none  &none
-
+   &none             &none            &none            &none             &none     &none   &none                 &none     &none        &none       &none        &none        &none  &none
+   &kp LG(F6)        &kp LG(F2)       &kp LG(F7)       &kp LA(F3)           &kp LG(F11)  &kp LA(F4) &none              &none     &kp LA(F12)  &kp LA(F8)  &kp LC(F1)   &none        &none  &none
+   &kp LG(F4)        &kp LG(F1)       &kp LG(F5)       &kp LA(F1)           &kp LG(F10)  &kp LA(F2) &none              &none     &kp LA(F10)  &kp LA(F7)  &kp LA(F11)  &none        &none  &none
+   &kp LG(F8)        &kp LG(F3)       &kp LG(F9)       &kp LA(F5)           &kp LG(F12)  &kp LA(F6) &none              &none     &kp LC(F2)   &kp LA(F9)  &kp LC(F3)   &kp LC(F4)   &none  &none
+   &none             &none            &none            &none             &none     &none   &none                 &none     &none        &none       &none        &none        &none  &none
+   &none             &none            &none            &none             &none     &none   &none                 &none     &none        &none       &none        &none        &none  &none
+x
                         >;
                 };
         };
