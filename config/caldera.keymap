@@ -142,7 +142,6 @@
    &kp LG(F8)        &kp LG(F3)       &kp LG(F9)       &kp LA(F5)           &kp LG(F12)  &kp LA(F6) &none              &none     &kp LC(F2)   &kp LA(F9)  &kp LC(F3)   &kp LC(F4)   &none  &none
    &none             &none            &none            &none             &none     &none   &none                 &none     &none        &none       &none        &none        &none  &none
    &none             &none            &none            &none             &none     &none   &none                 &none     &none        &none       &none        &none        &none  &none
-x
                         >;
                 };
         };
