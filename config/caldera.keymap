@@ -21,7 +21,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp LGUI &kp F1>
+                = <&macro_press &kp LGUI> 
+                , <&macro_tap &kp F1>
+                , <&macro_release &kp LGUI>
                 ;
         };
 
@@ -142,12 +144,13 @@
                 };
                 arrows_and_modifiers {
                         bindings = <
-   &none  &none        &none             &none            &none            &none             &none                      &none     &none  &none       &none     &none        &none  &none
    &none  &none        &none             &none            &none            &none             &none                      &none     &none  &kp X       &kp UP    &none        &none  &none
    &none  &none        &none             &none            &msc SCRL_UP     &none             &none                      &none     &kp Z  &kp LEFT    &kp DOWN  &kp RIGHT    &kp N4 &kp BSPC
    &none  &kp LCTRL    &kp LALT          &kp LSHIFT       &kp LGUI         &msc SCRL_DOWN    &none                      &none     &kp H  &kp V       &kp S     &none        &none  &none
    &none  &none        &msc SCRL_LEFT    &msc SCRL_RIGHT  &zed_em_kay       &none            &none                      &none     &none  &none       &none     &none        &none  &none
    &none  &none        &none             &none            &none            &none             &none                      &none     &none  &none       &none     &none        &none  &none
+   &none  &none        &none             &none            &none            &none             &none                      &none     &none  &none       &none     &none        &none  &none
+
                         >;
                 };
                 teleport_layer {
