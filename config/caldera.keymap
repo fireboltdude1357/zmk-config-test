@@ -19,6 +19,7 @@
         };
     };
 };
+
 / {
     macros {
         zed_em_kay: zed_em_kay {
@@ -103,8 +104,8 @@
    &kp TAB    &kp Q     &kp W     &kp E      &kp R      &kp T     &kp DEL            &mo 3    &kp Y      &kp U      &kp I     &kp O     &kp P    &kp BSLH 
    &kp CAPS   &kp A     &kp S     &kp D      &kp F      &kp G     &kp BSPC           &kp CAPS &kp H      &kp J      &kp K     &kp L     &kp SEMI &kp APOS  
    &kp LSHFT  &kp Z     &kp X     &kp C      &kp V      &kp B     &none              &none    &kp N      &kp M      &kp COMMA &kp DOT   &kp KP_SLASH &kp RSHFT
-   &kp N1     &kp N2    &mo 2     &mo 3      &kp ENTER  &kp SPACE &kp N7             &none    &kp SPACE  &mo 3  &kp LGUI     &mo 3     &none    &none 
-   &kp N1     &kp LCTRL &kp CAPS  &kp LALT   &mo 4  &kp ESC    &kp N7             &kp N1   &kp N2     &mo 1     &kp N4     &kp N5    &kp N6   &kp N7 
+   &kp N1     &kp N2    &kp ESC     &kp ESC      &kp ENTER  &kp SPACE &kp N7             &none    &kp SPACE  &mo 3  &kp LGUI     &mo 3     &none    &none 
+   &kp N1     &kp LCTRL &kp CAPS  &kp LALT   &kp LGUI  &mo 4    &kp N7             &kp N1   &kp N2     &mo 1     &kp N4     &kp N5    &kp N6   &kp N7 
                         >;
                 };
                 num_layer {
@@ -150,12 +151,13 @@
                 teleport_layer {
                         bindings = <
    &none             &none            &none            &none             &none     &none   &none                 &none     &none        &none       &none        &none        &none  &none
-   &kp LG(F6)        &kp LG(F2)       &kp LG(F7)       &kp LA(F3)           &kp LG(F11)  &kp LA(F4) &none              &none     &kp LA(F12)  &kp LA(F8)  &kp LC(F1)   &none        &none  &none
-   &kp LG(F4)        &kp LG(F1)       &kp LG(F5)       &kp LA(F1)           &kp LG(F10)  &kp LA(F2) &none              &none     &kp LA(F10)  &kp LA(F7)  &kp LA(F11)  &none        &none  &none
-   &kp LG(F8)        &kp LG(F3)       &kp LG(F9)       &kp LA(F5)           &kp LG(F12)  &kp LA(F6) &none              &none     &kp LC(F2)   &kp LA(F9)  &kp LC(F3)   &kp LC(F4)   &none  &none
+   &kp LG(F6)        &kp LG(F2)       &kp LG(F7)       &kp LA(F3)           &kp LG(F11)  &kp LA(F4) &none              &none &none     &kp LA(F12)  &kp LA(F8)  &kp LC(F1)   &none        &none 
+   &kp LG(F4)        &kp LG(F1)       &kp LG(F5)       &kp LA(F1)           &kp LG(F10)  &kp LA(F2) &none              &none &none    &kp LA(F10)  &kp LA(F7)  &kp LA(F11)  &none        &none  
+   &kp LG(F8)        &kp LG(F3)       &kp LG(F9)       &kp LA(F5)           &kp LG(F12)  &kp LA(F6) &none              &none &none    &kp LC(F2)   &kp LA(F9)  &kp LC(F3)   &kp LC(F4)   &none  
    &none             &none            &none            &none             &none     &none   &none                 &none     &none        &none       &none        &none        &none  &none
    &none             &none            &none            &none             &none     &none   &none                 &none     &none        &none       &none        &none        &none  &none
                         >;
+                        
                 };
         };
 };
