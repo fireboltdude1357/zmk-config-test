@@ -14,7 +14,7 @@
         };
         combo_two {
             timeout-ms = <50>;
-            key-positions = <60 65>;
+            key-positions = <74 79>;
             bindings = <&mo 2>;
         };
     };
