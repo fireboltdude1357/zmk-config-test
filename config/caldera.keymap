@@ -13,6 +13,11 @@
             key-positions = <61 64>;
             bindings = <&mo 5>;
         };
+        combo_two {
+            timeout-ms = <50>;
+            key-positions = <89 93>;
+            bindings = <&mo 2>;
+        };
     };
 };
 / {
@@ -100,45 +105,45 @@
    &kp CAPS   &kp A     &kp S     &kp D      &kp F      &kp G     &kp BSPC           &kp CAPS &kp H      &kp J      &kp K     &kp L     &kp SEMI &kp RET  
    &kp LSHFT  &kp Z     &kp X     &kp C      &kp V      &kp B     &none              &none    &kp N      &kp M      &kp COMMA &kp DOT   &kp APOS &kp RSHFT
    &kp N1     &kp N2    &mo 2     &mo 3      &kp ENTER  &kp SPACE &kp N7             &none    &kp SPACE  &kp ENTER  &mo 4     &mo 3     &none    &none 
-   &kp N1     &kp LCTRL &kp CAPS  &kp LALT   &mo 4  &kp ESC    &kp N7             &kp N1   &kp N2     &mo 3     &kp N4     &kp N5    &kp N6   &kp N7 
+   &kp N1     &kp LCTRL &kp CAPS  &kp LALT   &mo 4  &kp ESC    &kp N7             &kp N1   &kp N2     &mo 1     &kp N4     &kp N5    &kp N6   &kp N7 
                         >;
                 };
                 num_layer {
                         bindings = <
    &none  &none    &none    &none     &none     &none    &none            &none     &none  &none    &none    &none    &none &none
    &none  &none    &none    &none     &none     &none    &none            &none     &none  &none    &none    &none    &none &none
-   &none  &kp N1   &kp N2   &kp N3    &kp N4    &kp N5   &none            &none     &kp N7 &kp N8   &kp N9   &kp N0   &kp R &none
-   &none  &none    &none    &none     &none     &none    &none            &none     &none  &none    &none    &none    &none &none
-   &none  &none    &none    &none     &none     &none    &none            &none     &none  &none    &none    &none    &none &none
+   &kp TILDE  &kp N1   &kp N2   &kp N3    &kp N4    &kp N5   &none            &none     &kp N6 &kp N7   &kp N8   &kp N9   &kp 0r&none
+   &kp PIPE  &BSLH    &kp UNDERSCORE    &none     &kp MINUS     &kp LBKT    &none            &none     &none  &none    &none    &none    &none &none
+   &none  &none    yy&none    &none     &kp LBRC     &kp RBRC    &none            &none     &none  &none    &none    &none    &none &none
    &none  &none    &none    &none     &none     &none    &none            &none     &none  &none    &none    &none    &none &none
                         >;
                 };
                 special_chars {
-                        bindings = <
+                        binings = <
    &none  &none    &none    &none     &none         &none         &none            &none     &none     &none    &none    &none    &none &none
    &none  &none    &none    &none     &none         &none         &none            &none     &none     &none    &none    &none    &none &none
    &none  &kp EXCL &kp AT   &kp POUND &kp DOLLAR    &kp PERCENT   &none            &none     &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR &none
-   &none  &none    &none    &none     &none         &none         &none            &none     &none     &none    &none    &none    &none &none
+   &none  &kp BSLH    &kp COLON    &kp SEMICOLON     &kp KP_MINUS    &none    &none            &none     &none  &none    &none    &none    &none &none
    &none  &none    &none    &none     &none         &none         &none            &none     &none     &none    &none    &none    &none &none
    &none  &none    &none    &none     &none         &none         &none            &none     &none     &none    &none    &none    &none &none
                         >;
                 };
                 mouse_layer {
                         bindings = <
-   &none  &none    &none             &none            &none              &none    &none                      &none     &none  &none    &none    &none    &none &none
+   &none  &none    &none             &none            &none              &none    &none                     &none     &none  &none    &none    &none    &none &none
    &none  &none    &none             &mmv MOVE_UP     &kp LSHFT          &none    &none                      &none     &none  &none    &none    &none    &none &none
    &none  &none    &mmv MOVE_LEFT    &mmv MOVE_DOWN   &mmv MOVE_RIGHT    &kp LGUI &none                      &none     &none  &mkp MB4 &mkp MB5 &none    &none &none
-   &none  &none    &none             &none            &none              &none    &none                      &none     &none  &none    &none    &none    &mkp MB5 &none
-   &none  &none    &none             &none            &mkp MB1           &mkp MB2 &none                      &none     &none  &none    &mkp MB4    &none    &none &none
+   &none  &none    &msc SCRL_LEFT             &msc SCRL_RIGHT            &msc SCRL_DOWN              &msc SCRL_UP    &none                      &none     &none  &none    &none    &none    &mkp MB5 &none
+   &none  &none    &none             &none            &mkp MB2           &mkp MB1 &none                      &none     &none  &none    &mkp MB4    &none    &none &none
    &none  &none    &none             &none            &none              &none    &none                      &none     &none  &none    &none    &none    &none &none
                         >;
                 };
                 arrows_and_modifiers {
                         bindings = <
    &none  &none        &none             &none            &none            &none             &none                     &none     &none  &none       &none     &none        &none  &none   
-   &none  &none        &none             &none            &msc SCRL_UP     &none             &none                     &none     &none  &kp X       &kp UP    &none        &none  &none 
+   &none  &none        &none             &none            &msc SCRL_UP     &none             &none                     &none     &none  &kp X       &kp UP    &kp C         &none  &none 
    &none  &kp LCTRL    &kp LALT          &kp LSHIFT       &kp LGUI         &msc SCRL_DOWN    &none                     &none     &kp Z  &kp LEFT    &kp DOWN  &kp RIGHT    &kp N4 &kp BSPC 
-   &kp LSHIFT  &none        &msc SCRL_LEFT    &msc SCRL_RIGHT  &zed_em_kay      &none             &none                     &none     &kp H  &kp V       &kp S     &none        &none  &none 
+   &kp LSHIFT  &none        &msc SCRL_LEFT    &msc SCRL_RIGHT  &zed_em_kay      &none             &none                    &none     &kp H  &kp V       &kp S     &none        &none  &none 
    &none  &none        &none             &none            &none            &none             &none                     &none     &kp TAB  &none       &none     &none        &none  &none
    &none  &none        &none             &none            &none            &none             &none                     &none     &none  &none       &none     &none        &none  &none               
                         >;
