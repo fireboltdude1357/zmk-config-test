@@ -4,7 +4,6 @@
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
 #include <dt-bindings/zmk/pointing.h>
-
   / {
     combos {
         compatible = "zmk,combos";
@@ -15,7 +14,7 @@
         };
         combo_two {
             timeout-ms = <50>;
-            key-positions = <89 93>;
+            key-positions = <75 79>;
             bindings = <&mo 2>;
         };
     };
