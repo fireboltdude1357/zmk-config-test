@@ -9,7 +9,7 @@
 
         // Column pins (inputs)
         col-gpios =
-            <&gpio0 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+            <&gpio1 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
             <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
             <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
             <&gpio0 02 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
@@ -18,13 +18,12 @@
 
         // Row pins (outputs)
         row-gpios =
-            <&gpio0 20 GPIO_ACTIVE_HIGH>,
+            <&gpio0 9 GPIO_ACTIVE_HIGH>,
             <&gpio0 17 GPIO_ACTIVE_HIGH>,
             <&gpio0 22 GPIO_ACTIVE_HIGH>,
             <&gpio0 24 GPIO_ACTIVE_HIGH>,
             <&gpio1 0 GPIO_ACTIVE_HIGH>,
             <&gpio0 11 GPIO_ACTIVE_HIGH>,
-            <&gpio1 6 GPIO_ACTIVE_HIGH>;
     };
 
     // shared matrix transform provided by testkb_shared.dtsi

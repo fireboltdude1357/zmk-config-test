@@ -6,34 +6,9 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            // Layout preview (left half)
-            // |  `   |  TAB  |   \\   |  SHIFT |   +   |  LGUI  |
-            // |  1   |   Q   |   A   |   Z    |   -   |  LCTRL |
-            // |  2   |   W   |   S   |   X    |  SPC  |  LALT  |
-            // |  3   |   E   |   D   |   C    |  ENT  | K_MUTE |
-            // |  4   |   R   |   F   |   V    | empty | empty  |
-            // |  5   |   T   |   G   |   B    | empty | empty  |
-            // |  ESC |  ENT  |  DEL  |   +    | empty | empty  |
             bindings = <
-                &kp GRAVE  &kp TAB    &kp BSLH   &kp LSHIFT &none   &kp N1
-                &kp N1      &kp Q      &kp A      &kp Z      &none  &kp N2
-                &kp N2      &kp W      &kp S      &kp X      &mo 1  &kp CAPSLOCK
-                &kp N3      &kp E      &kp D      &kp C      &kp L  &kp LALT
-                &kp N4      &kp R      &kp F      &kp V      &kp SPACE      &kp LCTRL
-                &kp N5      &kp T      &kp G      &kp B      &kp ENTER      &kp LGUI
-                &kp ESC    &kp ENTER  &kp DEL    &kp PLUS   &none &none
+                &kp A   // Your single key sends "A"
             >;
-        };
-        num_layer {
-            bindings = <
-                &kp R  &kp R  &kp R  &kp R  &kp R  &kp R
-                &kp R  &kp R  &kp N1  &kp R  &kp R  &kp R
-                &kp R  &kp R  &kp N2  &kp R  &kp R  &kp R
-                &kp R  &kp R  &kp N3  &kp R  &kp R  &kp R
-                &kp R  &kp R  &kp N4  &kp R  &kp R  &kp R
-                &kp R  &kp R  &kp N5  &kp R  &kp R  &kp R
-                &kp R  &kp R  &kp R  &kp R  &kp R  &kp R
-            >; 
         };
     };
 };

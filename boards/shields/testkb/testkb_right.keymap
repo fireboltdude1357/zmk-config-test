@@ -6,34 +6,9 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            // Layout preview (right half)
-            // | BKSP |  TAB  |   \\   | RSHFT |   +   |  RGUI  |
-            // |  6   |   Y   |   H   |   N   |   =   |  RCTRL |
-            // |  7   |   U   |   J   |   M   |  SPC  |  RALT  |
-            // |  8   |   I   |   K   |  ,    |  ENT  | K_MUTE |
-            // |  9   |   O   |   L   |  .    | empty | empty  |
-            // |  0   |   P   |   ;   |  /    | empty | empty  |
-            // |  ESC |  ENT  |  DEL  |   +   | empty | empty  |
             bindings = <
-                &kp BSPC  &kp TAB    &kp BSLH   &kp RSHIFT  &kp PLUS   &kp RGUI
-                &kp N6     &kp Y      &kp H      &kp N       &kp EQUAL  &kp RCTRL
-                &kp N7     &kp U      &kp J      &kp M       &kp SPACE  &kp RALT
-                &kp N8     &kp I      &kp K      &kp COMMA   &kp ENTER  &kp K_MUTE
-                &kp N9     &kp O      &kp L      &kp DOT     &none      &none
-                &kp N0     &kp P      &kp SEMI   &kp SLASH   &none      &none
-                &kp ESC   &kp ENTER  &kp DEL    &kp PLUS    &none      &none
+                &kp A   // Your single key sends "A"
             >;
-        };
-        num_layer {
-            bindings = <
-                &kp R  &kp R  &kp R  &kp R  &kp R  &kp R
-                &kp R  &kp R  &kp N6  &kp R  &kp R  &kp R
-                &kp R  &kp R  &kp N7  &kp R  &kp R  &kp R
-                &kp R  &kp R  &kp N8  &kp R  &kp R  &kp R
-                &kp R  &kp R  &kp N9  &kp R  &kp R  &kp R
-                &kp R  &kp R  &kp N0  &kp R  &kp R  &kp R
-                &kp R  &kp R  &kp R  &kp R  &kp R  &kp R
-            >; 
         };
     };
 };
