@@ -100,7 +100,10 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |     |  N  |  M  |  ,  |  .  |  /  | APOS |
 // | CTRL | ALT | GUI | SPC | SPC | SPC |     | SPC | LOW |LARW |DARW |UARW | RARW |
                         bindings = <
-                            &kp A &kp A
+    &kp A &kp A &kp A &kp A &kp A &kp A &kp A           &kp A &kp A &kp A &kp A &kp A &kp A
+    &kp A &kp A &kp A &kp A &kp A &kp A &kp A           &kp A &kp A &kp A &kp A &kp A &kp A
+    &kp A &kp A &kp A &kp A &kp A &kp A &kp A           &kp A &kp A &kp A &kp A &kp A &kp A
+    &kp A &kp A &kp A &kp A &kp A &kp A &kp A           &kp A &kp A &kp A &kp A &kp A &kp A
                         >;
                 };
                 num_layer {

@@ -4,8 +4,8 @@
   "layouts": {
     "default_transform": {
       "name": "default_transform",
-      "rows": 6,
-      "cols": 14,
+      "rows": 4,
+      "cols": 12,
       "layout": []
     }
   },
