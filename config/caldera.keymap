@@ -100,11 +100,11 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |     |  N  |  M  |  ,  |  .  |  /  | APOS |
 // | CTRL | ALT | GUI | SPC | SPC | SPC |     | SPC | LOW |LARW |DARW |UARW | RARW |
                         bindings = <
-    &kp A &kp A &kp A &kp A &kp A &kp A &kp A           &kp A &kp A &kp A &kp A &kp A &kp A
-    &kp A &kp A &kp A &kp A &kp A &kp A &kp A           &kp A &kp A &kp A &kp A &kp A &kp A
-    &kp A &kp A &kp A &kp A &kp A &kp A &kp A           &kp A &kp A &kp A &kp A &kp A &kp A
-    &kp A &kp A &kp A &kp A &kp A &kp A &kp A           &kp A &kp A &kp A &kp A &kp A &kp A
-    &kp A &kp A &kp A &kp A &kp A &kp A &kp A           &kp A &kp A &kp A &kp A &kp A &kp A
+    &kp A &kp Q &kp W &kp E &kp R &kp T           &kp A &kp A &kp A &kp A &kp A &kp A
+    &kp A &kp A &kp S &kp D &kp F &kp G           &kp H &kp J &kp K &kp L &kp SEMI &kp A
+    &kp A &kp Z &kp X &kp C &kp V &kp B           &kp N &kp M &kp COMMA &kp DOT &kp BLSH &kp A
+    &kp A &kp A &kp A &kp A &kp A &kp A           &kp A &kp A &kp A &kp A &kp A &kp A
+    &kp 1 &kp 2 &kp 3 &kp 4 &kp 5 &kp 6           &kp 1 &kp 2 &kp 3 &kp 4 &kp 5 &kp 6
                         >;
                 };
                 num_layer {
