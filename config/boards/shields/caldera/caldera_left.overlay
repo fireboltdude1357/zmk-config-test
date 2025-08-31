@@ -17,4 +17,3 @@
         , <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // Row B from the schematic file
         ;
 };
-
