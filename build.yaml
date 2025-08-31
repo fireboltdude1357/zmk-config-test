@@ -25,5 +25,7 @@ include:
     shield: caldera_left
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: caldera_left_with_studio
   - board: nice_nano_v2
     shield: caldera_right
+    artifact-name: caldera_right
