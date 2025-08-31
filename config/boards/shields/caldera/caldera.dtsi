@@ -1,6 +1,10 @@
 #include <dt-bindings/zmk/matrix_transform.h>
+#include "caldera-layouts.dtsi"
 
 / {
+    chosen {
+        zmk,physical-layout = &physical_layout0;
+    };
 
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
@@ -23,12 +27,5 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4) RC(4,5) RC(4,6)          RC(4,7) RC(4,8)
         diode-direction = "col2row";
 
 
-    };
-    
-       physical_layout0: physical_layout_0 {
-        compatible = "zmk,physical-layout";
-        display-name = "Default Layout";
-        kscan = <&kscan0>;
-        transform = <&default_transform>;
     };
 };
