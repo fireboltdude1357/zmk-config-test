@@ -9,7 +9,7 @@
         compatible = "zmk,combos";
         combo_teleport {
             timeout-ms = <50>;
-            key-positions = <41 4
+            key-positions = <41 44>
             bindings = <&kp N0>;
         };
         combo_special_chars {
