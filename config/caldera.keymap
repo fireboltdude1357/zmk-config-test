@@ -7,9 +7,9 @@
   / {
     combos {
         compatible = "zmk,combos";
-        combo_esc {
+        combo_teleport {
             timeout-ms = <50>;
-            key-positions = <60 65>;
+            key-positions = <41 64>;
             bindings = <&mo 5>;
         };
         combo_two {
@@ -100,61 +100,56 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |     |  N  |  M  |  ,  |  .  |  /  | APOS |
 // | CTRL | ALT | GUI | SPC | SPC | SPC |     | SPC | LOW |LARW |DARW |UARW | RARW |
                         bindings = <
-    &studio_unlock &kp Q &kp W &kp E &kp R &kp T           &kp Y &kp U &kp I &kp O &kp P&kp A
-    &kp A &kp A &kp S &kp D &kp F &kp G           &kp H &kp J &kp K &kp L &kp SEMI &kp A
-    &kp A &kp Z &kp X &kp C &kp V &kp B           &kp N &kp M &kp COMMA &kp DOT &kp SLASH &kp A
-    &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6           &kp N7 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6
-    &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6           &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6
+    &studio_unlock  &kp Q  &kp W  &kp E  &kp R  &kp T            &kp Y     &kp U  &kp I     &kp O   &kp P     &kp A
+    &kp A           &kp A  &kp S  &kp D  &kp F  &kp G            &kp H     &kp J  &kp K     &kp L   &kp SEMI  &kp A
+    &kp A           &kp Z  &kp X  &kp C  &kp V  &kp B            &kp N     &kp M  &kp COMMA &kp DOT &kp SLASH &kp A
+    &kp N1          &kp N2 &kp N3 &kp N4 &kp N5 &kp N6           &kp SPACE &mo 3  &kp N3    &kp N4  &kp N5    &kp N6
+    &kp N1          &kp N2 &kp N3 &kp N4 &kp N5 &kp N6           &kp N1    &kp N2 &kp N3    &kp N4  &kp N5    &kp N6
                         >;
                 };
                 num_layer {
                         bindings = <
-   &none  &none    &none    &none     &none     &none    &none            &none     &none  &none    &none    &none    &none &none
-   &none  &none    &none    &none     &none     &none    &none            &none     &none  &none    &none    &none    &none &none
-   &kp TILDE  &kp N1   &kp N2   &kp N3    &kp N4    &kp N5   &none            &none     &kp N6 &kp N7   &kp N8   &kp N9   &kp N0 &none
-   &kp PIPE  &kp BSLH    &kp UNDERSCORE    &none     &kp MINUS     &kp LBKT    &none            &none     &none  &none    &none    &none    &none &none
-   &none  &none    &none    &none     &kp LBRC     &kp RBRC    &none            &none     &none  &none    &none    &none    &none &none
-   &none  &none    &none    &none     &none     &none    &none            &none     &none  &none    &none    &none    &none &none
+   &none      &none    &none             &none     &none        &none               &none     &none  &none    &none    &none    &none 
+   &none      &none    &none             &none     &none        &none               &none     &none  &none    &none    &none    &none 
+   &kp TILDE  &kp N1   &kp N2            &kp N3    &kp N4       &kp N5              &none     &kp N6 &kp N7   &kp N8   &kp N9   &kp N0
+   &kp PIPE   &kp BSLH &kp UNDERSCORE    &none     &kp MINUS    &kp LBKT            &none     &none  &none    &none    &none    &none 
+   &none      &none    &none             &none     &kp LBRC     &kp RBRC            &none     &none  &none    &none    &none    &none 
                         >;
                 };
                 special_chars {
                         bindings = <
-   &none  &none    &none    &none     &none         &none         &none            &none     &none     &none    &none    &none    &none &none
-   &none  &none    &none    &none     &none         &none         &none            &none     &none     &none    &none    &none    &none &none
-   &none  &kp EXCL &kp AT   &kp POUND &kp DOLLAR    &kp PERCENT   &none            &none     &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR &none
-   &none  &kp BSLH    &kp COLON    &kp SEMICOLON     &kp KP_MINUS    &none    &none            &none     &none  &none    &none    &none    &none &none
-   &none  &none    &none    &none     &none         &none         &none            &none     &none     &none    &none    &none    &none &none
-   &none  &none    &none    &none     &none         &none         &none            &none     &none     &none    &none    &none    &none &none
+   &none  &none    &none        &none             &none         &none                  &none     &none     &none    &none    &none    &none   
+   &none  &none    &none        &none             &none         &none                  &none     &none     &none    &none    &none    &none   
+   &none  &kp EXCL &kp AT       &kp POUND         &kp DOLLAR    &kp PERCENT            &none     &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR
+   &none  &kp BSLH &kp COLON    &kp SEMICOLON     &kp KP_MINUS  &none                  &none     &none     &none    &none    &none    &none   
+   &none  &none    &none        &none             &none         &none                  &none     &none     &none    &none    &none    &none   
                         >;
                 };
                 mouse_layer {
                         bindings = <
-   &none  &none    &none             &none            &none              &none    &none                     &none     &none  &none    &none    &none    &none &none
-   &none  &none    &none             &mmv MOVE_UP     &kp LSHFT          &none    &none                      &none     &none  &none    &none    &none    &none &none
-   &none  &none    &mmv MOVE_LEFT    &mmv MOVE_DOWN   &mmv MOVE_RIGHT    &kp LGUI &none                      &none     &none  &mkp MB4 &mkp MB5 &none    &none &none
-   &none  &none    &msc SCRL_LEFT             &msc SCRL_RIGHT            &msc SCRL_DOWN              &msc SCRL_UP    &none                      &none     &none  &none    &none    &none    &mkp MB5 &none
-   &none  &none    &none             &none            &mkp MB2           &mkp MB1 &none                      &none     &none  &none    &mkp MB4    &none    &none &none
-   &none  &none    &none             &none            &none              &none    &none                      &none     &none  &none    &none    &none    &none &none
+   &none  &none    &none             &none            &none              &none                             &none     &none  &none    &none    &none    &none   
+   &none  &none    &none             &mmv MOVE_UP     &kp LSHFT          &none                             &none     &none  &none    &none    &none    &none   
+   &none  &none    &mmv MOVE_LEFT    &mmv MOVE_DOWN   &mmv MOVE_RIGHT    &kp LGUI                          &none     &none  &mkp MB4 &mkp MB5 &none    &none   
+   &none  &none    &msc SCRL_LEFT    &msc SCRL_RIGHT  &msc SCRL_DOWN     &msc SCRL_UP                      &none     &none  &none    &none    &none    &mkp MB5
+   &none  &none    &none             &none            &mkp MB2           &mkp MB1                          &none     &none  &none    &mkp MB4 &none    &none   
                         >;
                 };
                 arrows_and_modifiers {
                         bindings = <
-   &none  &none        &none             &none            &none            &none             &none                     &none     &none  &none       &none     &none        &none  &none   
-   &none  &none        &none             &none            &msc SCRL_UP     &none             &none                     &none     &none  &kp X       &kp UP    &kp C         &none  &none 
-   &none  &kp LCTRL    &kp LALT          &kp LSHIFT       &kp LGUI         &msc SCRL_DOWN    &none                     &none     &kp Z  &kp LEFT    &kp DOWN  &kp RIGHT    &kp N4 &kp BSPC 
-   &kp LSHIFT  &none        &msc SCRL_LEFT    &msc SCRL_RIGHT  &zed_em_kay      &none             &none                    &none     &kp H  &kp V       &kp S     &none        &none  &none 
-   &none  &none        &none             &none            &none            &none             &none                     &none     &kp TAB  &none       &none     &none        &none  &none
-   &none  &none        &none             &none            &none            &none             &none                     &none     &none  &none       &none     &none        &none  &none               
+   &none  &none        &none             &none            &none            &none                           &none  &none       &none     &none        &none  &none   
+   &none  &none        &none             &none            &msc SCRL_UP     &none                           &none  &kp X       &kp UP    &kp C        &none  &none 
+   &none  &kp LCTRL    &kp LALT          &kp LSHIFT       &kp LGUI         &msc SCRL_DOWN                  &kp Z  &kp LEFT    &kp DOWN  &kp RIGHT    &kp N4 &kp BSPC 
+   &kp LSHIFT  &none   &msc SCRL_LEFT    &msc SCRL_RIGHT  &zed_em_kay      &none                           &kp H  &kp V       &kp S     &none        &none  &none 
+   &none  &none        &none             &none            &none            &none                           &kp TAB  &none     &none     &none        &none  &none
                         >;
                 };
                 teleport_layer {
                         bindings = <
-   &none             &none            &none            &none             &none     &none   &none                 &none     &none        &none       &none        &none        &none  &none
-   &kp LG(F6)        &kp LG(F2)       &kp LG(F7)       &kp LA(F3)           &kp LG(F11)  &kp LA(F4) &none              &none &none     &kp LA(F12)  &kp LA(F8)  &kp LC(F1)   &none        &none 
-   &kp LG(F4)        &kp LG(F1)       &kp LG(F5)       &kp LA(F1)           &kp LG(F10)  &kp LA(F2) &none              &none &none    &kp LA(F10)  &kp LA(F7)  &kp LA(F11)  &none        &none  
-   &kp LG(F8)        &kp LG(F3)       &kp LG(F9)       &kp LA(F5)           &kp LG(F12)  &kp LA(F6) &none              &none &none    &kp LC(F2)   &kp LA(F9)  &kp LC(F3)   &kp LC(F4)   &none  
-   &none             &none            &none            &none             &none     &none   &none                 &none     &none        &none       &none        &none        &none  &none
-   &none             &none            &none            &none             &none     &none   &none                 &none     &none        &none       &none        &none        &none  &none
+   &none             &none            &none            &none             &none        &none                &none       &none        &none        &none      &none &none
+   &kp LG(F6)        &kp LG(F2)       &kp LG(F7)       &kp LA(F3)        &kp LG(F11)  &kp LA(F4)           &kp LA(F12)  &kp LA(F8)  &kp LC(F1)   &none      &none &none 
+   &kp LG(F4)        &kp LG(F1)       &kp LG(F5)       &kp LA(F1)        &kp LG(F10)  &kp LA(F2)           &kp LA(F10)  &kp LA(F7)  &kp LA(F11)  &none      &none &none  
+   &kp LG(F8)        &kp LG(F3)       &kp LG(F9)       &kp LA(F5)        &kp LG(F12)  &kp LA(F6)           &kp LC(F2)   &kp LA(F9)  &kp LC(F3)   &kp LC(F4) &none &none  
+   &none             &none            &none            &none             &none        &none                &none       &none        &none        &none      &none &none
                         >;
                         
                 };
