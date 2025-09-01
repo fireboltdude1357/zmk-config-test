@@ -14,7 +14,7 @@
         };
         combo_special_chars {
             timeout-ms = <50>;
-            key-positions = <52 57>;
+            key-positions = <51 56>;
             bindings = <&mo 2>;
         };
     };
@@ -104,24 +104,24 @@
     &kp A           &kp A  &kp S  &kp D  &kp F  &kp G            &kp H     &kp J  &kp K     &kp L   &kp SEMI  &kp A
     &kp A           &kp Z  &kp X  &kp C  &kp V  &kp B            &kp N     &kp M  &kp COMMA &kp DOT &kp SLASH &kp A
     &kp N1          &kp N2 &kp N3 &kp N4 &kp N5 &kp RET          &kp SPACE &mo 3  &kp N3    &kp N4  &kp N5    &kp N6
-    &kp N1          &kp N2 &kp N3 &mo 4 &kp N5 &kp N6            &kp N1    &kp N2 &mo 1     &kp N4  &kp N5    &kp N6
+    &kp N1          &kp N2 &kp N3 &mo 4  &kp N5 &kp N6           &kp N1    &kp N2 &mo 1     &kp N4  &kp N5    &kp N6
                         >;
                 };
                 num_layer {
                         bindings = <
    &none      &none    &none             &none     &none        &none               &none     &none  &none    &none    &none    &none 
-   &none      &none    &none             &none     &none        &none               &none     &none  &none    &none    &none    &none 
    &kp TILDE  &kp N1   &kp N2            &kp N3    &kp N4       &kp N5              &none     &kp N6 &kp N7   &kp N8   &kp N9   &kp N0
    &kp PIPE   &kp BSLH &kp UNDERSCORE    &none     &kp MINUS    &kp LBKT            &none     &none  &none    &none    &none    &none 
    &none      &none    &none             &none     &kp LBRC     &kp RBRC            &none     &none  &none    &none    &none    &none 
+   &none      &none    &none             &none     &none        &none               &none     &none  &none    &none    &none    &none 
                         >;
                 };
                 special_chars {
                         bindings = <
    &none  &none    &none        &none             &none         &none                  &none     &none     &none    &none    &none    &none   
-   &none  &none    &none        &none             &none         &none                  &none     &none     &none    &none    &none    &none   
    &none  &kp EXCL &kp AT       &kp POUND         &kp DOLLAR    &kp PERCENT            &none     &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR
    &none  &kp BSLH &kp COLON    &kp SEMICOLON     &kp KP_MINUS  &none                  &none     &none     &none    &none    &none    &none   
+   &none  &none    &none        &none             &none         &none                  &none     &none     &none    &none    &none    &none   
    &none  &none    &none        &none             &none         &none                  &none     &none     &none    &none    &none    &none   
                         >;
                 };
@@ -137,17 +137,10 @@
                 arrows_and_modifiers {
                         bindings = <
    &none  &none        &none             &none            &none            &none                           &none   &kp X       &none        &kp C        &none     &none 
-   &none  &none        &none             &none            &msc SCRL_UP     &none                           &kp Z   &kp V       &kp UP       &none        &kp BKSCP &kp N4 
+   &none  &none        &none             &none            &msc SCRL_UP     &none                           &kp Z   &kp V       &kp UP       &none        &kp BSPC  &kp N4 
    &none  &kp LCTRL    &kp LALT          &kp LSHIFT       &kp LGUI         &msc SCRL_DOWN                  &kp H   &kp LEFT    &kp DOWN     &kp RIGHT    &none     &none 
    &kp LSHIFT  &none   &msc SCRL_LEFT    &msc SCRL_RIGHT  &zed_em_kay      &none                           &kp TAB &none       &kp S        &none        &none     &none
    &none  &none        &none             &none            &none            &none                           &none   &none       &none        &none        &none     &none   
-   
-
-
-
-
-
-
                         >;
                 };
                 teleport_layer {
