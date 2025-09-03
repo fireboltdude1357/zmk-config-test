@@ -174,7 +174,7 @@
                 mouse_layer {
                         bindings = <
    &none  &none    &none             &mmv MOVE_UP        &kp LSHFT          &none                           &none     &none  &none    &none    &none    &none   
-   &none  &none    &mmv MOVE_LEFT    &mmv MOVE_DOWN      &mmv MOVE_RIGHT    &kp LGUI                        &none     &mo 100  &mo 101 &mkp MB5 &none    &none   
+   &none  &none    &mmv MOVE_LEFT    &mmv MOVE_DOWN      &mmv MOVE_RIGHT    &kp LGUI                        &none     &mo 7  &none    &mkp MB5 &none    &none   
    &none  &none    &msc SCRL_LEFT    &msc SCRL_RIGHT     &msc SCRL_DOWN     &none                           &none     &none  &none    &none    &none    &mkp MB5
    &none  &none    &none             &none               &mkp MB2              &mkp MB1                     &none     &none  &none    &none    &none    &none   
    &none  &none    &none             &none            &none              &none                              &none     &none  &none    &mkp MB4 &none    &none   
