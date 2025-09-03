@@ -183,7 +183,7 @@
                 special_chars {
                         bindings = <
    &none  &none    &none        &none             &none         &none                  &none     &none     &none    &none    &none    &none   
-   &none  &kp EXCL &kp AT       &kp POUND         &kp DOLLAR    &kp PERCENT            &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR  &none
+   &none  &kp EXCL &kp AT       &kp POUND         &kp DOLLAR    &kp PERCENT            &kp CARET &kp AMPS   &kp STAR &kp LPAR &kp RPAR  &none
    &none  &kp BSLH &kp COLON    &kp SEMICOLON     &kp KP_MINUS  &none                  &none     &none     &none    &none    &none    &none   
    &none  &none    &none        &none             &none         &none                  &none     &none     &none    &none    &none    &none   
    &none  &none    &none        &none             &none         &none                  &none     &none     &none    &none    &none    &none   
@@ -205,7 +205,7 @@
    &none  &none        &none             &none            &msc SCRL_UP     &none                 &none   &kp X       &kp UP       &kp C        &none     &none              
    &none  &kp LCTRL    &kp LALT          &kp LSHIFT       &kp LGUI         &msc SCRL_DOWN        &kp Z   &kp LEFT    &kp DOWN     &kp RIGHT    &kp BSPC  &kp N4           
    &kp LSHIFT  &none   &msc SCRL_LEFT    &msc SCRL_RIGHT  &none            &none                 &kp H   &kp V       &kp S        &kp TILDE        &none     &none           
-   &none  &none        &none             &none            &none            &none                 &kp TAB &kp SPACE       &none        &none        &none     &none          
+   &none  &none        &none             &none            &none            &none                 &kp TAB &kp SPACE       &kp P        &none        &none     &none          
    &none  &none        &none             &none            &none            &none                 &none   &none       &none        &none        &none     &none             
                         >;
                 };
