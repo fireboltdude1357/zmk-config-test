@@ -23,6 +23,48 @@
             key-positions = <51 56>;
             bindings = <&mo 2>;
         };
+        combo_move_up_1{
+            timeout-ms = <50>;
+            key-positions = <51 56>;
+            bindings = <&mmv MOVE_Y(100)>;
+        };
+        combo_move_up_2{
+            timeout-ms = <50>;
+            key-positions = <51 56>;
+            bindings = <&mmv MOVE_Y(200)>;
+        };
+        combo_move_up_3{
+            timeout-ms = <50>;
+            key-positions = <51 56>;
+            bindings = <&mmv MOVE_Y(300)>;
+        };
+        combo_move_up_4{
+            timeout-ms = <50>;
+            key-positions = <51 56>;
+            bindings = <&mmv MOVE_Y(400)>;
+        };
+        
+        
+        combo_move_down_1{
+            timeout-ms = <50>;
+            key-positions = <51 56>;
+            bindings = <&mmv MOVE_Y(-100)>;
+        };
+        combo_move_down_2{
+            timeout-ms = <50>;
+            key-positions = <51 56>;
+            bindings = <&mmv MOVE_Y(-200)>;
+        };
+        combo_move_down_3{
+            timeout-ms = <50>;
+            key-positions = <51 56>;
+            bindings = <&mmv MOVE_Y(-300)>;
+        };
+        combo_move_down_4{
+            timeout-ms = <50>;
+            key-positions = <51 56>;
+            bindings = <&mmv MOVE_Y(-400)>;
+        };
     };
 };
 
@@ -90,8 +132,8 @@
                 compatible = "zmk,keymap";
                 default_layer {
 // ---------------------------------------------------------------------------------
-// |   `  |  1  |  2  |  3  |  4  |  5  |     |  6  |  7  |  8  |  9  |  0  | BKSP |
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |     |  Y  |  U  |  I  |  O  |  P  |  \   |
+// |   0  |  1  |  2  |  3  |  4  |  5  |     |  6  |  7  |  8  |  9  |  10 | 11   |
+// |  12  |  13 |  14 |  15 |  16 |  17 |     |  18 |  19 |  I  |  O  |  P  |  \   |
 // | CAPS |  A  |  S  |  D  |  F  |  G  |     |  H  |  J  |  K  |  L  |  ;  |  ENT |
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |     |  N  |  M  |  ,  |  .  |  /  | APOS |
 // | CTRL | ALT | GUI | SPC | SPC | SPC |     | SPC | LOW |LARW |DARW |UARW | RARW |
@@ -126,8 +168,8 @@
    &none  &none    &none             &mmv MOVE_UP        &kp LSHFT          &none                             &none     &none  &none    &none    &none    &none   
    &none  &none    &mmv MOVE_LEFT    &mmv MOVE_DOWN      &mmv MOVE_RIGHT    &kp LGUI                          &none     &none  &mkp MB4 &mkp MB5 &none    &none   
    &none  &none    &msc SCRL_LEFT    &msc SCRL_RIGHT     &msc SCRL_DOWN     &none                             &none     &none  &none    &none    &none    &mkp MB5
-   &none  &none    &none             &none               &none              &mkp MB1                          &none     &none  &none    &none    &none    &none   
-   &none  &none    &none             &mkp MB2            &none              &none                             &none     &none  &none    &mkp MB4 &none    &none   
+   &none  &none    &none             &none               &mkp MB2              &mkp MB1                          &none     &none  &none    &none    &none    &none   
+   &none  &none    &none             &none            &none              &none                             &none     &none  &none    &mkp MB4 &none    &none   
                         >;
                 };
                 arrows_and_modifiers {
@@ -135,7 +177,7 @@
    &none  &none        &none             &none            &msc SCRL_UP     &none                 &none   &kp X       &kp UP       &kp C        &none     &none              
    &none  &kp LCTRL    &kp LALT          &kp LSHIFT       &kp LGUI         &msc SCRL_DOWN        &kp Z   &kp LEFT    &kp DOWN     &kp RIGHT    &kp BSPC  &kp N4           
    &kp LSHIFT  &none   &msc SCRL_LEFT    &msc SCRL_RIGHT  &none            &none                 &kp H   &kp V       &kp S        &kp GRAVE        &none     &none           
-   &none  &none        &none             &none            &none            &none                 &kp TAB &none       &none        &none        &none     &none          
+   &none  &none        &none             &none            &none            &none                 &kp TAB &kp SPACE       &none        &none        &none     &none          
    &none  &none        &none             &none            &none            &none                 &none   &none       &none        &none        &none     &none             
 
    
