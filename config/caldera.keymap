@@ -156,7 +156,7 @@
                 num_layer {
                         bindings = <
    &none      &none    &none             &none     &none        &none               &none     &none  &none    &none    &none    &none 
-   &kp TILDE  &kp N1   &kp N2            &kp N3    &kp N4       &kp N5              &none     &kp N6 &kp N7   &kp N8   &kp N9   &kp N0
+   &kp TILDE  &kp N1   &kp N2            &kp N3    &kp N4       &kp N5              &kp N6 &kp N7   &kp N8   &kp N9   &kp N0    &none
    &kp PIPE   &kp BSLH &kp UNDERSCORE    &none     &kp MINUS    &kp LBKT            &none     &none  &none    &none    &none    &none 
    &none      &none    &none             &none     &kp LBRC     &kp RBRC            &none     &none  &none    &none    &none    &none 
    &none      &none    &none             &none     &none        &none               &none     &none  &none    &none    &none    &none 
@@ -202,9 +202,19 @@
                 fast_mouse_layer {
                         bindings = <
    &none  &none    &none             &kp W        &kp LSHFT          &none                           &none     &none  &none    &none    &none    &none   
-   &none  &none    &kp A    &kp S      &kp D    &kp LGUI                        &none     &mo 100  &mo 101 &mkp MB5 &none    &none   
+   &none  &none    &kp A    &kp S      &kp D    &kp LGUI                        &none     &mo 7  &none &mkp MB5 &none    &none   
    &none  &none    &msc SCRL_LEFT    &msc SCRL_RIGHT     &msc SCRL_DOWN     &none                           &none     &none  &none    &none    &none    &mkp MB5
    &none  &none    &none             &none               &mkp MB2              &mkp MB1                     &none     &none  &none    &none    &none    &none   
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &mkp MB4 &none    &none   
+                        >;
+                };
+
+                empty_layer_1 {
+                        bindings = <
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &mkp MB4 &none    &none   
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &mkp MB4 &none    &none   
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &mkp MB4 &none    &none   
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &mkp MB4 &none    &none   
    &none  &none    &none             &none            &none              &none                              &none     &none  &none    &mkp MB4 &none    &none   
                         >;
                 };
