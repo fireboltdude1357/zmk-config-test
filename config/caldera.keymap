@@ -7,6 +7,11 @@
   / {
     combos {
         compatible = "zmk,combos";
+        combo_teleport {
+            timeout-ms = <50>;
+            key-positions = <40 43>;
+            bindings = <&mo 5>;
+        };
 
         combo_shift {
             timeout-ms = <50>;
@@ -62,7 +67,15 @@
         };
     };
 };
-
+/ {
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+    };
+};
 / {
     macros {
         screen_1_center: screen_1_center {
@@ -122,15 +135,6 @@
 };
 
 / {
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-        tri_layer {
-            if-layers = <3 4>;
-            then-layer = <5>;
-        };
-    };
-};
-/ {
         
         keymap {
                 compatible = "zmk,keymap";
@@ -145,7 +149,7 @@
     &studio_unlock  &kp Q  &kp W  &kp E  &kp R  &kp T            &kp Y     &kp U  &kp I     &kp O   &kp P     &kp A
     &kp A           &kp A  &kp S  &kp D  &kp F  &kp G            &kp H     &kp J  &kp K     &kp L   &kp SEMI  &kp APOS
     &kp A           &kp Z  &kp X  &kp C  &kp V  &kp B            &kp N     &kp M  &kp COMMA &kp DOT &kp SLASH &kp A 
-    &kp N1          &kp N2 &kp ESC &kp N4 &mo 4 &kp RET          &kp SPACE &mo 3  &kp LGUI    &kp N4  &kp N5    &kp N6
+    &kp N1          &kp N2 &kp ESC &kp N4 &kp N5 &kp RET          &kp SPACE &mo 3  &kp LGUI    &kp N4  &kp N5    &kp N6
     &kp N1          &kp N2 &kp N3 &mo 4  &kp N5 &kp N6           &kp N1    &kp N2 &mo 1     &kp N4  &kp N5    &kp N6
                         >;
                 };
@@ -169,11 +173,11 @@
                 };
                 mouse_layer {
                         bindings = <
-   &none  &none    &none             &mmv MOVE_UP        &kp LSHFT          &none                             &none     &none  &none    &none    &none    &none   
-   &none  &none    &mmv MOVE_LEFT    &mmv MOVE_DOWN      &mmv MOVE_RIGHT    &kp LGUI                          &none     &none  &mkp MB4 &mkp MB5 &none    &none   
-   &none  &none    &msc SCRL_LEFT    &msc SCRL_RIGHT     &msc SCRL_DOWN     &none                             &none     &none  &none    &none    &none    &mkp MB5
-   &none  &none    &none             &none               &mkp MB2              &mkp MB1                          &none     &none  &none    &none    &none    &none   
-   &none  &none    &none             &none            &none              &none                             &none     &none  &none    &mkp MB4 &none    &none   
+   &none  &none    &none             &mmv MOVE_UP        &kp LSHFT          &none                           &none     &none  &none    &none    &none    &none   
+   &none  &none    &mmv MOVE_LEFT    &mmv MOVE_DOWN      &mmv MOVE_RIGHT    &kp LGUI                        &none     &mo 100  &mo 101 &mkp MB5 &none    &none   
+   &none  &none    &msc SCRL_LEFT    &msc SCRL_RIGHT     &msc SCRL_DOWN     &none                           &none     &none  &none    &none    &none    &mkp MB5
+   &none  &none    &none             &none               &mkp MB2              &mkp MB1                     &none     &none  &none    &none    &none    &none   
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &mkp MB4 &none    &none   
                         >;
                 };
                 arrows_and_modifiers {
@@ -192,6 +196,16 @@
    &kp LG(F8)        &kp LG(F3)       &kp LG(F9)       &kp LA(F5)        &kp LG(F12)  &kp LA(F6)           &kp LC(F2)   &kp LA(F9)  &kp LC(F3)   &kp LC(F4) &none &none  
    &none             &none            &none            &none             &none        &none                &none       &none        &none        &none      &none &none
    &none             &none            &none            &none             &none        &none                &none       &none        &none        &none      &none &none
+                        >;
+                };
+
+                fast_mouse_layer {
+                        bindings = <
+   &none  &none    &none             &kp W        &kp LSHFT          &none                           &none     &none  &none    &none    &none    &none   
+   &none  &none    &kp A    &kp S      &kp D    &kp LGUI                        &none     &mo 100  &mo 101 &mkp MB5 &none    &none   
+   &none  &none    &msc SCRL_LEFT    &msc SCRL_RIGHT     &msc SCRL_DOWN     &none                           &none     &none  &none    &none    &none    &mkp MB5
+   &none  &none    &none             &none               &mkp MB2              &mkp MB1                     &none     &none  &none    &none    &none    &none   
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &mkp MB4 &none    &none   
                         >;
                 };
         };
