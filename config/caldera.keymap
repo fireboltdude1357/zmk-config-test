@@ -72,7 +72,7 @@
         compatible = "zmk,conditional-layers";
         tri_layer {
             if-layers = <6 3>;
-            then-layer = <7>;
+            then-layer = <13>;
         };
     };
 };
@@ -154,6 +154,7 @@
     &kp N1          &kp N2 &kp N3 &mo 4  &kp N5 &kp N6           &kp N1    &kp N2 &mo 1     &kp N4  &kp N5    &kp N6
                         >;
                 };
+// 1
                 num_layer {
                         bindings = <
    &none      &none    &none             &none     &none        &none               &none     &none  &none    &none    &none    &none 
@@ -163,15 +164,17 @@
    &none      &none    &none             &none     &none        &none               &none     &none  &none    &none    &none    &none 
                         >;
                 };
+// 2
                 special_chars {
                         bindings = <
    &none  &none    &none        &none             &none         &none                  &none     &none     &none    &none    &none    &none   
-   &none  &kp EXCL &kp AT       &kp POUND         &kp DOLLAR    &kp PERCENT            &none     &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR
+   &none  &kp EXCL &kp AT       &kp POUND         &kp DOLLAR    &kp PERCENT            &kp CARET &kp AMPS &kp STAR &kp LPAR &kp RPAR  &none
    &none  &kp BSLH &kp COLON    &kp SEMICOLON     &kp KP_MINUS  &none                  &none     &none     &none    &none    &none    &none   
    &none  &none    &none        &none             &none         &none                  &none     &none     &none    &none    &none    &none   
    &none  &none    &none        &none             &none         &none                  &none     &none     &none    &none    &none    &none   
                         >;
                 };
+// 3
                 mouse_layer {
                         bindings = <
    &none  &none    &none             &mmv MOVE_UP        &kp LSHFT          &none                           &none     &none  &none    &none    &none    &none   
@@ -181,6 +184,7 @@
    &none  &none    &none             &none            &none              &none                              &none     &none  &none    &mkp MB4 &none    &none   
                         >;
                 };
+// 4 
                 arrows_and_modifiers {
                         bindings = <
    &none  &none        &none             &none            &msc SCRL_UP     &none                 &none   &kp X       &kp UP       &kp C        &none     &none              
@@ -190,6 +194,7 @@
    &none  &none        &none             &none            &none            &none                 &none   &none       &none        &none        &none     &none             
                         >;
                 };
+// 5 
                 teleport_layer {
                         bindings = <
    &kp LG(F6)        &kp LG(F2)       &kp LG(F7)       &kp LA(F3)        &kp LG(F11)  &kp LA(F4)           &kp LA(F12)  &kp LA(F8)  &kp LC(F1)   &none      &none &none 
@@ -199,21 +204,80 @@
    &none             &none            &none            &none             &none        &none                &none       &none        &none        &none      &none &none
                         >;
                 };
-
+// 6 
                 empty_layer_1 {
                         bindings = <
-   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &mkp MB4 &none    &none   
-   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &mkp MB4 &none    &none   
-   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &mkp MB4 &none    &none   
-   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &mkp MB4 &none    &none   
-   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &mkp MB4 &none    &none   
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &none   &none    &none   
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &none   &none    &none   
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &none   &none    &none   
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &none   &none    &none   
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &none   &none    &none   
                         >;
                 };
-
-                fast_mouse_layer {
+// 7
+                empty_layer_2 {
                         bindings = <
-   &none  &none    &none             &kp W        &kp LSHFT          &none                           &none     &none  &none    &none    &none    &none   
-   &none  &none    &kp A    &kp S      &kp D    &kp LGUI                        &none     &mo 6  &none &mkp MB5 &none    &none   
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &none   &none    &none   
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &none   &none    &none   
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &none   &none    &none   
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &none   &none    &none   
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &none   &none    &none   
+                        >;
+                };
+// 8 
+                empty_layer_3 {
+                        bindings = <
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &none   &none    &none   
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &none   &none    &none   
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &none   &none    &none   
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &none   &none    &none   
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &none   &none    &none   
+                        >;
+                };
+// 9
+                empty_layer_4 {
+                        bindings = <
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &none   &none    &none   
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &none   &none    &none   
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &none   &none    &none   
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &none   &none    &none   
+                        >;
+                };
+// 10
+                empty_layer_5 {
+                        bindings = <
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none   &none  &none    &none   
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none   &none  &none    &none   
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none   &none  &none    &none   
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none   &none  &none    &none   
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none   &none  &none    &none   
+                        >;
+                };
+// 11
+                empty_layer_6 {
+                        bindings = <
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &none &none    &none   
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &none &none    &none   
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &none &none    &none   
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &none &none    &none   
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &none &none    &none   
+                        >;
+                };
+// 12
+                empty_layer_7 {
+                        bindings = <
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &none &none    &none   
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &none &none    &none   
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &none &none    &none   
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &none &none    &none   
+   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &none &none    &none   
+                        >;
+                };
+// 13
+                fast_mouse_layer  {  
+                        bindings = <
+   &none  &none    &none             &mmv MOVE_Y(400)        &kp LSHFT          &none                           &none     &none  &none    &none    &none    &none   
+   &none  &none    &kp A    &mmv MOVE_X(400)      &mmv MOVE_Y(-400)    &mmv MOVE_X(400)                        &none     &mo 6  &none &mkp MB5 &none    &none   
    &none  &none    &msc SCRL_LEFT    &msc SCRL_RIGHT     &msc SCRL_DOWN     &none                           &none     &none  &none    &none    &none    &mkp MB5
    &none  &none    &none             &none               &mkp MB2              &mkp MB1                     &none     &none  &none    &none    &none    &none   
    &none  &none    &none             &none            &none              &none                              &none     &none  &none    &mkp MB4 &none    &none   
