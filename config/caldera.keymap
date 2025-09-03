@@ -70,9 +70,24 @@
 / {
     conditional_layers {
         compatible = "zmk,conditional-layers";
-        tri_layer {
+        fast_layer_1 {
             if-layers = <6 3>;
             then-layer = <13>;
+        };
+
+        fast_layer_2 {
+            if-layers = <7 3>;
+            then-layer = <14>;
+        };
+
+        fast_layer_3 {
+            if-layers = <8 3>;
+            then-layer = <15>;
+        };
+
+        fast_layer_4 {
+            if-layers = <9 3>;
+            then-layer = <16>;
         };
     };
 };
@@ -178,8 +193,8 @@
                 mouse_layer {
                         bindings = <
    &none  &none    &none             &mmv MOVE_UP        &kp LSHFT          &none                           &none     &none  &none    &none    &none    &none   
-   &none  &none    &mmv MOVE_LEFT    &mmv MOVE_DOWN      &mmv MOVE_RIGHT    &kp LGUI                        &none     &mo 6  &none    &mkp MB5 &none    &none   
-   &none  &none    &msc SCRL_LEFT    &msc SCRL_RIGHT     &msc SCRL_DOWN     &none                           &none     &none  &none    &none    &none    &mkp MB5
+   &none  &none    &mmv MOVE_LEFT    &mmv MOVE_DOWN      &mmv MOVE_RIGHT    &kp LGUI                        &none     &mkp MB4  &mo 6    &mo 7 &none    &none   
+   &none  &none    &msc SCRL_LEFT    &msc SCRL_RIGHT     &msc SCRL_DOWN     &none                           &none     &mkp MB5  &mo 8    &mo 9    &none    &mkp MB5
    &none  &none    &none             &none               &mkp MB2              &mkp MB1                     &none     &none  &none    &none    &none    &none   
    &none  &none    &none             &none            &none              &none                              &none     &none  &none    &mkp MB4 &none    &none   
                         >;
@@ -274,13 +289,22 @@
                         >;
                 };
 // 13
-                fast_mouse_layer  {  
+                fast_mouse_layer_1  {  
                         bindings = <
-   &none  &none    &none             &mmv MOVE_Y(-4000)        &kp LSHFT          &none                       &none     &none  &none    &none    &none    &none   
-   &none  &none    &mmv MOVE_X(-4000)      &mmv MOVE_Y(4000)    &mmv MOVE_X(4000) &none                     &none     &mo 6  &none &mkp MB5 &none    &none   
-   &none  &none    &msc SCRL_LEFT    &msc SCRL_RIGHT     &msc SCRL_DOWN     &none                           &none     &none  &none    &none    &none    &mkp MB5
-   &none  &none    &none             &none               &mkp MB2              &mkp MB1                     &none     &none  &none    &none    &none    &none   
-   &none  &none    &none             &none            &none              &none                              &none     &none  &none    &mkp MB4 &none    &none   
+   &none  &none    &none                &mmv MOVE_Y(-4000)  &kp LSHFT          &none                     &none     &none     &none    &none    &none    &none   
+   &none  &none    &mmv MOVE_X(-4000)   &mmv MOVE_Y(4000)   &mmv MOVE_X(4000)  &none                     &none     &mkp MB4  &none    &none    &none    &none   
+   &none  &none    &msc SCRL_LEFT       &msc SCRL_RIGHT     &msc SCRL_DOWN     &none                     &none     &mkp MB5  &none    &none    &none    &mkp MB5
+   &none  &none    &none                &none               &mkp MB2           &mkp MB1                  &none     &none     &none    &none    &none    &none   
+   &none  &none    &none                &none               &none              &none                     &none     &none     &none    &none    &none    &none   
+                        >;
+                };
+                fast_mouse_layer_2  {  
+                        bindings = <
+   &none  &none    &none                &mmv MOVE_Y(-200)  &kp LSHFT          &none                     &none     &none     &none    &none    &none    &none   
+   &none  &none    &mmv MOVE_X(-200)   &mmv MOVE_Y(200)   &mmv MOVE_X(200)  &none                     &none     &mkp MB4  &none    &none    &none    &none   
+   &none  &none    &msc SCRL_LEFT       &msc SCRL_RIGHT     &msc SCRL_DOWN     &none                     &none     &mkp MB5  &none    &none    &none    &mkp MB5
+   &none  &none    &none                &none               &mkp MB2           &mkp MB1                  &none     &none     &none    &none    &none    &none   
+   &none  &none    &none                &none               &none              &none                     &none     &none     &none    &none    &none    &none   
                         >;
                 };
         };
