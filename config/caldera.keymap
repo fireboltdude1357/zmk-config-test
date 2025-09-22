@@ -184,7 +184,7 @@
                         bindings = <
    &none  &none    &none        &none             &none         &none                  &none     &none     &none    &none    &none    &none   
    &none  &kp EXCL &kp AT       &kp POUND         &kp DOLLAR    &kp PERCENT            &kp CARET &kp AMPS   &kp STAR &kp LPAR &kp RPAR  &none
-   &none  &kp BSLH &kp COLON    &kp SEMICOLON     &kp KP_MINUS  &none                  &none     &none     &none    &none    &none    &none   
+   &none  &kp BSLH &kp COLON    &kp SEMICOLON     &kp LBKT  &kp RBKT                  &kp RBRC     &kp LBRC     &none    &none    &none    &none   
    &none  &none    &none        &none             &none         &none                  &none     &none     &none    &none    &none    &none   
    &none  &none    &none        &none             &none         &none                  &none     &none     &none    &none    &none    &none   
                         >;
