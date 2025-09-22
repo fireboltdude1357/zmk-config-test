@@ -166,7 +166,7 @@
     &kp A           &kp A  &kp S  &kp D  &kp F  &kp G            &kp H     &kp J  &kp K     &kp L   &kp SEMI  &kp APOS
     &kp A           &kp Z  &kp X  &kp C  &kp V  &kp B            &kp N     &kp M  &kp COMMA &kp DOT &kp SLASH &kp A 
     &kp N1          &kp N2 &kp ESC &kp LGUI &mo 4 &kp RET          &kp SPACE &mo 3  &kp LGUI    &mo 15  &kp N5    &kp N6
-    &kp N1          &kp N2 &kp N3 &mo 2  &kp 5 &kp N6           &kp N1    &kp N2 &mo 1     &kp N4  &kp N5    &kp N6
+    &kp N1          &kp N2 &kp N3 &mo 2  &kp 5 &kp N6           &kp N7    &kp N8 &mo 1     &kp N9  &kp N0    &kp B
                         >;
                 };
 // 1
